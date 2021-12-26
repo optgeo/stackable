@@ -1,6 +1,13 @@
 # stackable [future work]
 A simple sinatra server of OS Open Zoomstack for UNVT Portable
 
+# Usage
+- `git clone git@gigthub.com:optgeo/stackable`
+- `cd stackable`
+- download ``
+- `rake host`
+Then the service will be available on port 8001.
+
 # Structure
 ```
 [mbtiles] -> sinatra server -[proxy_pass]-> nginx -> users
