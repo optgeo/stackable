@@ -1,6 +1,11 @@
 # stackable [future work]
 A simple sinatra server of OS Open Zoomstack for UNVT Portable
 
+# Structure
+```
+[mbtiles] -> sinatra server -[proxy_pass]-> nginx -> users
+```
+
 # About OS Open Zoomstack
 https://osdatahub.os.uk/downloads/open/OpenZoomstack
 
