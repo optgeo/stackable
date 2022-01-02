@@ -27,7 +27,6 @@ layout:
     - 11
   text-font:
     - Source Sans Pro Italic
-    - Arial Unicode MS Regular
   text-line-height: 1
 paint:
   text-color: '#1ca5d4'

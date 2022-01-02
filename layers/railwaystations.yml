@@ -33,7 +33,6 @@ layout:
     - ''
   text-font:
     - Source Sans Pro Regular
-    - Arial Unicode MS Regular
   text-justify: left
   text-offset:
     - match

@@ -21,7 +21,6 @@ layout:
   symbol-placement: line
   text-font:
     - Source Sans Pro Regular
-    - Arial Unicode MS Regular
   text-size:
     - interpolate
     - - linear

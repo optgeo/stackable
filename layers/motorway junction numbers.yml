@@ -29,7 +29,6 @@ layout:
     - 30
   text-font:
     - Source Sans Pro Bold
-    - Arial Unicode MS Regular
 paint:
   text-color: '#ffffff'
   text-halo-color: '#000000'

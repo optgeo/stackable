@@ -32,7 +32,6 @@ layout:
     - 28
   text-font:
     - Source Sans Pro Regular
-    - Arial Unicode MS Regular
 paint:
   text-halo-color: hsl(0, 0%, 100%)
   text-halo-width: 1

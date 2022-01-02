@@ -20,7 +20,6 @@ layout:
       - name
   text-font:
     - Source Sans Pro Regular
-    - Arial Unicode MS Regular
   text-size:
     - interpolate
     - - linear

@@ -10,4 +10,8 @@ task :serve do
   sh "charites serve style.yml"
 end
 
+desc 'build style'
+task :style do
+  sh "charites build style.yml docs/style.json"
+end
 

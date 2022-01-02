@@ -25,7 +25,6 @@ layout:
   text-letter-spacing: 0.05
   text-font:
     - Source Sans Pro Regular
-    - Arial Unicode MS Regular
 paint:
   text-color: '#d7986c'
   text-halo-color: '#fafaf3'

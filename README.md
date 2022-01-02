@@ -10,6 +10,11 @@ A simple sinatra server of OS Open Zoomstack for UNVT Portable
 - `rake host`
 Then the service will be available on port 8001.
 
+# Required gems
+- sqlite3
+- sinatra
+- sinatra-cors
+
 # Structure
 ```
 [mbtiles] -> sinatra server -[proxy_pass]-> nginx -> users

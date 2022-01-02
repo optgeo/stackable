@@ -27,7 +27,6 @@ layout:
     - 20
   text-font:
     - Source Sans Pro SemiBold
-    - Arial Unicode MS Regular
   text-line-height: 1
   text-padding: 2
   text-letter-spacing: 0.05

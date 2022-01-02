@@ -31,7 +31,6 @@ layout:
     - 28
   text-font:
     - Source Sans Pro Bold
-    - Arial Unicode MS Regular
   text-letter-spacing: 0.1
   symbol-spacing:
     - interpolate
