@@ -42,29 +42,13 @@ const showMap = async (texts) => {
   }
 
   map.on('load', () => {
-    map.on('click', 'voxel', e => {
+    map.on('click', 'names', e => {
       let u = new SpeechSynthesisUtterance()
       u.lang = 'en-GB'
-      u.text = 'a voxel of ' + e.features[0].properties.spacing + 'meters.'
+      u.text = e.features[0].properties.name1
       if (voice) u.voice = voice
       speechSynthesis.cancel()
       speechSynthesis.speak(u)
-    })
-    map.on('click', 'grid', e => {
-      let u = new SpeechSynthesisUtterance()
-      u.lang = 'ja-JP'
-      u.text = e.features[0].properties.MESH_NO
-      //speechSynthesis.cancel()
-      //speechSynthesis.speak(u)
-    })
-    map.on('moveend', e => {
-      let fs = map.queryRenderedFeatures(
-	[window.innerWidth / 2, window.innerHeight / 2], 
-        { layers : ['voxel'] }
-      )
-      if (fs.length == 0) return
-      let height = fs[0].properties.h 
-      console.log(height)
     })
   })
 }

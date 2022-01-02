@@ -16,7 +16,7 @@ Then the service will be available on port 8001.
 # Required gems
 - sqlite3
 - sinatra
-- sinatra-cors
+- thin (optional)
 
 # Structure
 ```
