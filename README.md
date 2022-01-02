@@ -3,6 +3,9 @@ A simple sinatra server of OS Open Zoomstack for UNVT Portable
 
 ![social preview image](https://repository-images.githubusercontent.com/441779395/05ecbfce-ab3f-41f7-b6c8-7fed3b62a3eb)
 
+# Demo
+https://x.optgeo.org/stackable/#16.36/51.516559/-0.175836/13.6/60
+
 # Usage
 - `git clone git@gigthub.com:optgeo/stackable`
 - `cd stackable`

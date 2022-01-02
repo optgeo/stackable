@@ -17,7 +17,7 @@ sources:
     type: vector
     maxzoom: 14
     attribution: "<a target='_blank' href='https://github.com/optgeo/stackable#about-os-open-zoomstack'>Contains OS data © Crown copyright and database right 2021</a>"
-sprite: https://x.optgeo.org/stackable/sprites
+sprite: https://x.optgeo.org/stackable/sprites/sprites
 glyphs: https://x.optgeo.org/stackable/fonts/{fontstack}/{range}.pbf
 layers:
   - !!inc/file layers/background.yml
