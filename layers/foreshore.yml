@@ -1,0 +1,7 @@
+id: foreshore
+type: fill
+source: composite
+source-layer: foreshore
+layout: {}
+paint:
+  fill-color: '#f6f6d1'

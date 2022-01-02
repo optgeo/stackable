@@ -1,0 +1,43 @@
+id: roads 0 Minor Road
+type: line
+metadata:
+  mapbox:group: 2a680f24b0d35061ed7d21fd33c9cf08
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - '=='
+    - - get
+      - level
+    - 0
+  - - match
+    - - get
+      - type
+    - - Minor
+    - true
+    - false
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 5
+    - 0.35
+    - 10
+    - 1.5
+    - 12
+    - 1.7
+    - 14
+    - 3.5
+    - 15
+    - 6.5
+    - 16
+    - 15
+    - 18
+    - 44
+    - 22
+    - 120
+  line-color: '#fef2b4'

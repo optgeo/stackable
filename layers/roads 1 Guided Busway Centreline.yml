@@ -1,0 +1,45 @@
+id: roads 1 Guided Busway Centreline
+type: line
+metadata:
+  mapbox:group: 52c81d2ff926c87a0714f2697b2f3694
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - match
+    - - get
+      - level
+    - - 1
+    - true
+    - false
+  - - match
+    - - get
+      - type
+    - - Guided Busway
+    - true
+    - false
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 8
+    - 0.1
+    - 10
+    - 0.2
+    - 12
+    - 0.2
+    - 14
+    - 0.4
+    - 15
+    - 0.6
+    - 16
+    - 0.75
+    - 18
+    - 3
+    - 22
+    - 10
+  line-color: '#b2b2b2'

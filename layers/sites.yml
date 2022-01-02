@@ -1,0 +1,22 @@
+id: sites
+type: fill
+source: composite
+source-layer: sites
+layout: {}
+paint:
+  fill-color:
+    - match
+    - - get
+      - type
+    - - Air Transport
+    - '#e3e3e3'
+    - - Education
+    - '#ffe494'
+    - - Medical Care
+    - '#fdd9e2'
+    - - Road Transport
+    - '#fff9b3'
+    - - Water Transport
+    - '#dddffe'
+    - '#e3e3e3'
+  fill-opacity: 0.6

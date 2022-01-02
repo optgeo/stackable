@@ -1,0 +1,36 @@
+id: motorway junction numbers
+type: symbol
+metadata:
+  mapbox:group: e196265c0e550aaddd2885dc32fdb674
+source: composite
+source-layer: names
+minzoom: 13
+filter:
+  - match
+  - - get
+    - type
+  - - Motorway Junctions
+  - true
+  - false
+layout:
+  text-field:
+    - to-string
+    - - get
+      - name1
+  text-size:
+    - interpolate
+    - - linear
+    - - zoom
+    - 13
+    - 11
+    - 16
+    - 16
+    - 22
+    - 30
+  text-font:
+    - Source Sans Pro Bold
+    - Arial Unicode MS Regular
+paint:
+  text-color: '#ffffff'
+  text-halo-color: '#000000'
+  text-halo-width: 10

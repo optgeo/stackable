@@ -15,6 +15,16 @@ Then the service will be available on port 8001.
 [mbtiles] -> sinatra server -[proxy_pass]-> nginx -> users
 ```
 
+# About style.yml
+style.yml is converted from https://github.com/OrdnanceSurvey/OS-Open-Zoomstack-Stylesheets/blob/master/Vector%20Tiles/Mapbox%20GL%20Styles/OS%20Open%20Zoomstack%20-%20Road.json and then edited. 
+
+Contains public sector information licensed under the Open Government Licence v3.0.
+
+# About the sprites
+sprites are from https://github.com/OrdnanceSurvey/OS-Open-Zoomstack-Stylesheets/tree/master/Vector%20Tiles/Mapbox%20GL%20Styles/sprites.
+
+Contains public sector information licensed under the Open Government Licence v3.0.
+ 
 # About OS Open Zoomstack
 https://osdatahub.os.uk/downloads/open/OpenZoomstack
 

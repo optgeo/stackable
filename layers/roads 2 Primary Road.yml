@@ -1,0 +1,53 @@
+id: roads 2 Primary Road
+type: line
+metadata:
+  mapbox:group: 0845f59ef0d52359da6fd788b079f747
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - match
+    - - get
+      - level
+    - - 2
+    - true
+    - false
+  - - match
+    - - get
+      - type
+    - - Primary
+    - true
+    - false
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 5
+    - 0.5
+    - 10
+    - 1.75
+    - 12
+    - 2
+    - 14
+    - 4
+    - 15
+    - 7.5
+    - 16
+    - 16
+    - 18
+    - 46
+    - 22
+    - 130
+  line-color: '#37c256'
+  line-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 5
+    - 0.6
+    - 9
+    - 1

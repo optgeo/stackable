@@ -1,0 +1,16 @@
+id: urban-areas
+type: fill
+source: composite
+source-layer: urban_areas
+maxzoom: 11
+layout: {}
+paint:
+  fill-color: '#fadab4'
+  fill-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 6
+    - 0.4
+    - 11
+    - 0.6

@@ -1,0 +1,44 @@
+id: woodland names
+type: symbol
+metadata:
+  mapbox:group: e196265c0e550aaddd2885dc32fdb674
+source: composite
+source-layer: names
+minzoom: 5
+filter:
+  - match
+  - - get
+    - type
+  - - Woodland
+  - true
+  - false
+layout:
+  text-field:
+    - to-string
+    - - get
+      - name1
+  text-size:
+    - interpolate
+    - - linear
+    - - zoom
+    - 11
+    - 9.5
+    - 14
+    - 11.5
+  text-font:
+    - Source Sans Pro Regular
+    - Arial Unicode MS Regular
+  text-line-height: 1
+  text-padding:
+    - interpolate
+    - - linear
+    - - zoom
+    - 14
+    - 10
+    - 16
+    - 2
+paint:
+  text-color: '#44913b'
+  text-halo-color: '#fafaf3'
+  text-halo-width: 1
+  text-halo-blur: 1

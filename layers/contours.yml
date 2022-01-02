@@ -1,0 +1,27 @@
+id: contours
+type: line
+source: composite
+source-layer: contours
+layout:
+  line-join: round
+paint:
+  line-color: '#d6986b'
+  line-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 9
+    - 0.25
+    - 12
+    - 0.45
+    - 13
+    - 0.7
+  line-width:
+    - match
+    - - get
+      - type
+    - - Normal
+    - 0.25
+    - - Index
+    - 0.5
+    - 0.2

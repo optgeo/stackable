@@ -1,0 +1,8 @@
+id: boundaries
+type: line
+source: composite
+source-layer: boundaries
+layout:
+  line-join: round
+paint:
+  line-color: hsl(0, 0%, 77%)

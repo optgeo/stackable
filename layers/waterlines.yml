@@ -1,0 +1,22 @@
+id: waterlines
+type: line
+source: composite
+source-layer: waterlines
+layout:
+  line-join: round
+paint:
+  line-color: '#a4daeb'
+  line-width:
+    - match
+    - - get
+      - type
+    - - National
+      - Regional
+      - District
+      - Local
+    - 1
+    - - MHW
+    - 1.2
+    - - MLW
+    - 0.7
+    - 1

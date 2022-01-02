@@ -1,0 +1,53 @@
+id: roads 0 Primary Road Casing
+type: line
+metadata:
+  mapbox:group: 2a680f24b0d35061ed7d21fd33c9cf08
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - match
+    - - get
+      - level
+    - - 0
+    - true
+    - false
+  - - match
+    - - get
+      - type
+    - - Primary
+    - true
+    - false
+layout:
+  line-join: round
+  line-cap: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 5
+    - 0.35
+    - 10
+    - 2.25
+    - 12
+    - 2.75
+    - 14
+    - 5.5
+    - 15
+    - 9.5
+    - 16
+    - 20
+    - 18
+    - 53
+    - 22
+    - 150
+  line-color: hsl(0, 0%, 56%)
+  line-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 5
+    - 0.4
+    - 9
+    - 1

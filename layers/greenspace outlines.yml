@@ -1,0 +1,18 @@
+id: greenspace outlines
+type: line
+source: composite
+source-layer: greenspaces
+layout:
+  line-join: round
+paint:
+  line-color: '#b9dba4'
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 10
+    - 0.1
+    - 15
+    - 0.3
+    - 18
+    - 0.6

@@ -1,0 +1,7 @@
+id: sea
+type: fill
+source: composite
+source-layer: sea
+layout: {}
+paint:
+  fill-color: '#d5eff8'

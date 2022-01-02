@@ -1,0 +1,44 @@
+id: roads 2 B Road Casing
+type: line
+metadata:
+  mapbox:group: 0845f59ef0d52359da6fd788b079f747
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - match
+    - - get
+      - level
+    - - 2
+    - true
+    - false
+  - - match
+    - - get
+      - type
+    - - B Road
+    - true
+    - false
+layout:
+  line-join: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 5
+    - 0.35
+    - 10
+    - 2
+    - 12
+    - 2.5
+    - 14
+    - 4.75
+    - 15
+    - 8
+    - 16
+    - 19
+    - 18
+    - 50
+    - 22
+    - 145
+  line-color: '#8f8f8f'

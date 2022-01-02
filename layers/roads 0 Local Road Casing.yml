@@ -1,0 +1,41 @@
+id: roads 0 Local Road Casing
+type: line
+metadata:
+  mapbox:group: 2a680f24b0d35061ed7d21fd33c9cf08
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - match
+    - - get
+      - level
+    - - 0
+    - true
+    - false
+  - - match
+    - - get
+      - type
+    - - Local
+    - true
+    - false
+layout:
+  line-join: round
+  line-cap: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 12
+    - 1.8
+    - 14
+    - 4.5
+    - 15
+    - 6
+    - 16
+    - 14
+    - 18
+    - 40
+    - 22
+    - 120
+  line-color: hsl(0, 0%, 56%)

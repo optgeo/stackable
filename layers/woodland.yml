@@ -1,0 +1,15 @@
+id: woodland
+type: fill
+source: composite
+source-layer: woodland
+layout: {}
+paint:
+  fill-color: '#d1f0ce'
+  fill-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 6
+    - 0.5
+    - 12
+    - 1

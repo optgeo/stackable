@@ -1,0 +1,40 @@
+id: road numbers
+type: symbol
+metadata:
+  mapbox:group: beaf4956fb8a63410ecf80abdebcdfb5
+source: composite
+source-layer: roads
+minzoom: 10
+filter:
+  - match
+  - - get
+    - type
+  - - Primary
+    - Motorway
+  - false
+  - true
+layout:
+  text-field:
+    - to-string
+    - - get
+      - number
+  symbol-placement: line
+  text-max-angle: 45
+  text-size:
+    - interpolate
+    - - linear
+    - - zoom
+    - 10
+    - 8
+    - 15
+    - 11
+    - 22
+    - 28
+  text-font:
+    - Source Sans Pro Regular
+    - Arial Unicode MS Regular
+paint:
+  text-halo-color: hsl(0, 0%, 100%)
+  text-halo-width: 1
+  text-halo-blur: 1
+  text-color: '#000000'

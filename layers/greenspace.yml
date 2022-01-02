@@ -1,0 +1,8 @@
+id: greenspace
+type: fill
+source: composite
+source-layer: greenspaces
+layout: {}
+paint:
+  fill-color: '#ebf5e5'
+  fill-antialias: false

@@ -1,0 +1,44 @@
+id: roads 1 Motorway Casing
+type: line
+metadata:
+  mapbox:group: 52c81d2ff926c87a0714f2697b2f3694
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - match
+    - - get
+      - level
+    - - 1
+    - true
+    - false
+  - - match
+    - - get
+      - type
+    - - Motorway
+    - true
+    - false
+layout:
+  line-join: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 5
+    - 0.35
+    - 10
+    - 2.25
+    - 12
+    - 2.75
+    - 14
+    - 5.5
+    - 15
+    - 9.5
+    - 16
+    - 20
+    - 18
+    - 53
+    - 22
+    - 150
+  line-color: '#8f8f8f'

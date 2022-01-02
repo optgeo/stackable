@@ -1,0 +1,16 @@
+id: national-parks
+type: fill
+source: composite
+source-layer: national_parks
+maxzoom: 12
+layout: {}
+paint:
+  fill-color: '#e5f5cc'
+  fill-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 9
+    - 0.8
+    - 12
+    - 0.1

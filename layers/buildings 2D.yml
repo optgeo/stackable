@@ -1,0 +1,11 @@
+id: buildings 2D
+type: fill
+source: composite
+source-layer: buildings
+maxzoom: 14
+layout: {}
+paint:
+  fill-color: '#fadab4'
+  fill-translate:
+    - 0
+    - 0

@@ -1,0 +1,15 @@
+id: surfacewater outlines
+type: line
+source: composite
+source-layer: surfacewater
+minzoom: 12
+layout: {}
+paint:
+  line-color:
+    - interpolate
+    - - linear
+    - - zoom
+    - 12
+    - '#d5eff8'
+    - 13
+    - hsl(194, 64%, 78%)

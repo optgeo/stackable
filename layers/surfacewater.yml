@@ -1,0 +1,7 @@
+id: surfacewater
+type: fill
+source: composite
+source-layer: surfacewater
+layout: {}
+paint:
+  fill-color: '#d5eff8'

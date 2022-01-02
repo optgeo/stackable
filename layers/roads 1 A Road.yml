@@ -1,0 +1,45 @@
+id: roads 1 A Road
+type: line
+metadata:
+  mapbox:group: 52c81d2ff926c87a0714f2697b2f3694
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - match
+    - - get
+      - level
+    - - 1
+    - true
+    - false
+  - - match
+    - - get
+      - type
+    - - A Road
+    - true
+    - false
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 5
+    - 0.35
+    - 10
+    - 1.5
+    - 12
+    - 1.7
+    - 14
+    - 3.5
+    - 15
+    - 6.5
+    - 16
+    - 15
+    - 18
+    - 44
+    - 22
+    - 120
+  line-color: '#ff889d'

@@ -1,0 +1,12 @@
+id: etl
+type: line
+source: composite
+source-layer: etl
+layout:
+  line-join: round
+paint:
+  line-color: hsl(0, 9%, 55%)
+  line-opacity: 0.5
+  line-dasharray:
+    - 10
+    - 5

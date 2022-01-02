@@ -1,0 +1,16 @@
+id: buildings 3D
+type: fill-extrusion
+source: composite
+source-layer: buildings
+minzoom: 14
+layout: {}
+paint:
+  fill-extrusion-color: '#fadab4'
+  fill-extrusion-height:
+    - interpolate
+    - - linear
+    - - zoom
+    - 14
+    - 0
+    - 15
+    - 8

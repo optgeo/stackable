@@ -1,0 +1,42 @@
+id: roads 0 Restricted Road
+type: line
+metadata:
+  mapbox:group: 2a680f24b0d35061ed7d21fd33c9cf08
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - '=='
+    - - get
+      - level
+    - 0
+  - - match
+    - - get
+      - type
+    - - Restricted
+    - true
+    - false
+layout:
+  line-join: round
+paint:
+  line-color: hsl(0, 0%, 89%)
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 12
+    - 1
+    - 14
+    - 2.5
+    - 15
+    - 4
+    - 16
+    - 7
+    - 18
+    - 24
+    - 22
+    - 85
+  line-opacity: 1
+  line-dasharray:
+    - 2
+    - 0.5

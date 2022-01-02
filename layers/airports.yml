@@ -1,0 +1,41 @@
+id: airports
+type: symbol
+metadata:
+  mapbox:group: e196265c0e550aaddd2885dc32fdb674
+source: composite
+source-layer: airports
+layout:
+  icon-image: Airport
+  icon-size:
+    - interpolate
+    - - linear
+    - - zoom
+    - 10
+    - 0.8
+    - 15
+    - 1
+  text-field:
+    - to-string
+    - - get
+      - name
+  text-font:
+    - Source Sans Pro Regular
+    - Arial Unicode MS Regular
+  text-size:
+    - interpolate
+    - - linear
+    - - zoom
+    - 10
+    - 9
+    - 15
+    - 13
+  text-justify: left
+  text-anchor: left
+  text-offset:
+    - 0.8
+    - 0
+paint:
+  text-color: '#000000'
+  text-halo-color: hsl(0, 0%, 100%)
+  text-halo-width: 1
+  text-halo-blur: 1

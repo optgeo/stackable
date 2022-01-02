@@ -1,0 +1,41 @@
+id: roads 2 Local Road
+type: line
+metadata:
+  mapbox:group: 0845f59ef0d52359da6fd788b079f747
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - match
+    - - get
+      - level
+    - - 2
+    - true
+    - false
+  - - match
+    - - get
+      - type
+    - - Local
+    - true
+    - false
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 12
+    - 1.4
+    - 14
+    - 3.5
+    - 15
+    - 5
+    - 16
+    - 12
+    - 18
+    - 35
+    - 22
+    - 100
+  line-color: '#ffffff'

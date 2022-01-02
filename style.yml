@@ -1,0 +1,107 @@
+version: 8
+name: OS Open Zoomstack - Road
+metadata:
+center:
+  - -1.6116775017445661
+  - 60.250689361310066
+zoom: 13.336684971142715
+bearing: 24.00002486533299
+pitch: 4.5
+light:
+  intensity: 0.25
+  color: hsl(0, 0%, 100%)
+sources:
+  composite:
+    tiles:
+      - https://x.optgeo.org/stackable/zxy/{z}/{x}/{y}.pbf
+    type: vector
+sprite: https://x.optgeo.org/stackable/sprites
+glyphs: https://x.optgeo.org/stackable/fonts/{fontstack}/{range}.pbf
+layers:
+  - !!inc/file layers/background.yml
+  - !!inc/file layers/sea.yml
+  - !!inc/file layers/national-parks.yml
+  - !!inc/file layers/urban-areas.yml
+  - !!inc/file layers/sites.yml
+  - !!inc/file layers/greenspace.yml
+  - !!inc/file layers/greenspace outlines.yml
+  - !!inc/file layers/woodland.yml
+  - !!inc/file layers/contours.yml
+  - !!inc/file layers/surfacewater.yml
+  - !!inc/file layers/surfacewater outlines.yml
+  - !!inc/file layers/foreshore.yml
+  - !!inc/file layers/waterlines.yml
+  - !!inc/file layers/buildings 2D.yml
+  - !!inc/file layers/roads 0 Local Road Casing.yml
+  - !!inc/file layers/roads 0 Minor Road Casing.yml
+  - !!inc/file layers/roads 0 B Road Casing.yml
+  - !!inc/file layers/roads 0 A Road Casing.yml
+  - !!inc/file layers/roads 0 Primary Road Casing.yml
+  - !!inc/file layers/roads 0 Motorway Casing.yml
+  - !!inc/file layers/roads 0 Restricted Road.yml
+  - !!inc/file layers/roads 0 Local Road.yml
+  - !!inc/file layers/roads 0 Guided Busway Casing.yml
+  - !!inc/file layers/roads 0 Guided Busway Centreline.yml
+  - !!inc/file layers/roads 0 Motorway.yml
+  - !!inc/file layers/roads 0 Minor Road.yml
+  - !!inc/file layers/roads 0 B Road.yml
+  - !!inc/file layers/roads 0 A Road.yml
+  - !!inc/file layers/roads 0 Primary Road.yml
+  - !!inc/file layers/roads 1 Local Road Casing.yml
+  - !!inc/file layers/roads 1 Minor Road Casing.yml
+  - !!inc/file layers/roads 1 B Road Casing.yml
+  - !!inc/file layers/roads 1 A Road Casing.yml
+  - !!inc/file layers/roads 1 Primary Road Casing.yml
+  - !!inc/file layers/roads 1 Motorway Casing.yml
+  - !!inc/file layers/roads 1 Restricted Road.yml
+  - !!inc/file layers/roads 1 Local Road.yml
+  - !!inc/file layers/roads 1 Guided Busway Casing.yml
+  - !!inc/file layers/roads 1 Guided Busway Centreline.yml
+  - !!inc/file layers/roads 1 Motorway.yml
+  - !!inc/file layers/roads 1 Minor Road.yml
+  - !!inc/file layers/roads 1 B Road.yml
+  - !!inc/file layers/roads 1 A Road.yml
+  - !!inc/file layers/roads 1 Primary Road.yml
+  - !!inc/file layers/roads 2 Local Road Casing.yml
+  - !!inc/file layers/roads 2 Minor Road Casing.yml
+  - !!inc/file layers/roads 2 B Road Casing.yml
+  - !!inc/file layers/roads 2 A Road Casing.yml
+  - !!inc/file layers/roads 2 Primary Road Casing.yml
+  - !!inc/file layers/roads 2 Motorway Casing.yml
+  - !!inc/file layers/roads 2 Restricted Road.yml
+  - !!inc/file layers/roads 2 Local Road.yml
+  - !!inc/file layers/roads 2 Guided Busway Casing.yml
+  - !!inc/file layers/roads 2 Guided Busway Centreline.yml
+  - !!inc/file layers/roads 2 Motorway.yml
+  - !!inc/file layers/roads 2 Minor Road.yml
+  - !!inc/file layers/roads 2 B Road.yml
+  - !!inc/file layers/roads 2 A Road.yml
+  - !!inc/file layers/roads 2 Primary Road.yml
+  - !!inc/file layers/road Tunnels.yml
+  - !!inc/file layers/rail.yml
+  - !!inc/file layers/rail tunnel.yml
+  - !!inc/file layers/buildings 3D.yml
+  - !!inc/file layers/boundaries.yml
+  - !!inc/file layers/etl.yml
+  - !!inc/file layers/road numbers.yml
+  - !!inc/file layers/road names.yml
+  - !!inc/file layers/primary road numbers.yml
+  - !!inc/file layers/motorway numbers.yml
+  - !!inc/file layers/contour labels.yml
+  - !!inc/file layers/motorway junction numbers.yml
+  - !!inc/file layers/greenspace names.yml
+  - !!inc/file layers/sites names.yml
+  - !!inc/file layers/landform names.yml
+  - !!inc/file layers/landcover names.yml
+  - !!inc/file layers/water names.yml
+  - !!inc/file layers/woodland names.yml
+  - !!inc/file layers/small settlement names.yml
+  - !!inc/file layers/suburban area names.yml
+  - !!inc/file layers/railwaystations.yml
+  - !!inc/file layers/airports.yml
+  - !!inc/file layers/village and hamlet names.yml
+  - !!inc/file layers/town names.yml
+  - !!inc/file layers/city names.yml
+  - !!inc/file layers/national park names.yml
+  - !!inc/file layers/capital city names.yml
+  - !!inc/file layers/country names.yml

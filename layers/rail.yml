@@ -1,0 +1,49 @@
+id: rail
+type: line
+source: composite
+source-layer: rail
+filter:
+  - match
+  - - get
+    - type
+  - - Tunnel
+  - false
+  - true
+layout:
+  line-join: round
+paint:
+  line-color: '#646464'
+  line-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 10
+    - 0.2
+    - 14
+    - 1
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 10
+    - - match
+      - - get
+        - type
+      - - Multi Track
+      - 0.6
+      - - Single Track
+      - 0.5
+      - - Narrow Gauge
+      - 0.4
+      - 1
+    - 17
+    - - match
+      - - get
+        - type
+      - - Multi Track
+      - 2
+      - - Single Track
+      - 1.5
+      - - Narrow Gauge
+      - 1
+      - 1

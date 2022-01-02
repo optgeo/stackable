@@ -1,0 +1,43 @@
+id: roads 0 Motorway
+type: line
+metadata:
+  mapbox:group: 2a680f24b0d35061ed7d21fd33c9cf08
+source: composite
+source-layer: roads
+filter:
+  - all
+  - - '=='
+    - - get
+      - level
+    - 0
+  - - match
+    - - get
+      - type
+    - - Motorway
+    - true
+    - false
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 5
+    - 0.75
+    - 10
+    - 2
+    - 12
+    - 2.75
+    - 14
+    - 4.5
+    - 15
+    - 8
+    - 16
+    - 17
+    - 18
+    - 48
+    - 22
+    - 140
+  line-color: '#06b1ca'

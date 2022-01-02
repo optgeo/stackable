@@ -1,0 +1,35 @@
+id: road Tunnels
+type: line
+source: composite
+source-layer: roads
+filter:
+  - match
+  - - get
+    - type
+  - - Tunnels
+  - true
+  - false
+layout:
+  line-cap: round
+  line-join: round
+paint:
+  line-width:
+    - interpolate
+    - - linear
+    - - zoom
+    - 9
+    - 0.5
+    - 17
+    - 2
+  line-color: '#4b4444'
+  line-opacity:
+    - interpolate
+    - - linear
+    - - zoom
+    - 9
+    - 0.1
+    - 14
+    - 0.35
+  line-dasharray:
+    - 3
+    - 2.5
