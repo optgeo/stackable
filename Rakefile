@@ -2,7 +2,9 @@ require './constants'
 
 desc 'serve the tiles'
 task :host do
-  sh "ruby serve.rb -p #{PORT}"
+  while true
+    sh "ruby serve.rb -p #{PORT}"
+  end
 end
 
 desc 'charites serve'

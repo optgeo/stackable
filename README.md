@@ -1,4 +1,4 @@
-# stackable [future work]
+# stackable
 A simple sinatra server of OS Open Zoomstack for UNVT Portable
 
 ![social preview image](https://repository-images.githubusercontent.com/441779395/05ecbfce-ab3f-41f7-b6c8-7fed3b62a3eb)
